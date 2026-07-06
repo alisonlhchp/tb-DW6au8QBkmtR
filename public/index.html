@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirect</title>
+</head>
+<body>
+  <script>
+    const targetUrl = "https://witty-forest-02f296f10.7.azurestaticapps.net";
+    if (!targetUrl) {
+      document.body.innerHTML = '<p style="color:red;padding:20px;">Error: Persistent URL not configured.</p>';
+    } else {
+      window.location.href = targetUrl;
+    }
+  </script>
+</body>
+</html>
